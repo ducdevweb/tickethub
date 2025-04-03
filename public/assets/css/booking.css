@@ -1,0 +1,318 @@
+#my-booking {
+    padding: 20px; /* Thêm padding cho section */
+}
+
+#my-booking .wrapper-booking {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-booking .title-booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wrapper-booking .name-booking {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wrapper-booking .btn-booking {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapper-booking .btn-booking a {
+    padding: 8px 15px;
+    background: #198754;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.wrapper-booking .btn-booking a:hover {
+    background: #146c43;
+}
+
+/* Input chọn ngày */
+.wrapper-booking input[type="date"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 130px;
+}
+
+.wrapper-booking input[type="date"]:hover,
+.wrapper-booking input[type="date"]:focus {
+    border-color: #198754;
+    box-shadow: 0 0 5px rgba(25, 135, 84, 0.5);
+    outline: none;
+}
+
+/* Bố cục chung */
+.content-booking {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    position: relative;
+    border: 1px solid #ddd;
+    margin-bottom: 15px; /* Thêm khoảng cách giữa các booking */
+}
+
+/* Ảnh user */
+.img-userbooking img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #198754;
+}
+
+/* Thông tin đặt chỗ */
+.infor-booking {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+.infor-booking p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Nhấn mạnh nội dung quan trọng */
+.infor-booking p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Trạng thái "Đã hủy" */
+.status {
+    padding: 5px 12px;
+    background: #dc3545; /* Màu đỏ */
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Nút "Hủy" */
+.content-booking a {
+    padding: 8px 15px;
+    background: #f8d7da; /* Màu đỏ nhạt */
+    color: #dc3545;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.content-booking a:hover {
+    background: #dc3545;
+    color: white;
+}
+
+/* Responsive Design */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #my-booking {
+        padding: 15px;
+    }
+
+    .wrapper-booking {
+        padding: 15px;
+    }
+
+    .wrapper-booking .name-booking {
+        font-size: 18px;
+    }
+
+    .wrapper-booking .btn-booking a {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+
+    .wrapper-booking input[type="date"] {
+        width: 120px;
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    .content-booking {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .img-userbooking img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .infor-booking {
+        font-size: 13px;
+    }
+
+    .infor-booking p:first-child {
+        font-size: 15px;
+    }
+
+    .status {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .content-booking a {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    #my-booking {
+        padding: 10px;
+    }
+
+    .wrapper-booking {
+        padding: 10px;
+    }
+
+    .wrapper-booking .title-booking {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .wrapper-booking .name-booking {
+        font-size: 16px;
+    }
+
+    .wrapper-booking .btn-booking {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .wrapper-booking .btn-booking a {
+        padding: 6px 10px;
+        font-size: 12px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .wrapper-booking input[type="date"] {
+        width: 100%;
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    .content-booking {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .img-userbooking img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .infor-booking {
+        font-size: 12px;
+    }
+
+    .infor-booking p:first-child {
+        font-size: 14px;
+    }
+
+    .status {
+        font-size: 10px;
+        padding: 3px 8px;
+        top: 5px;
+        right: 5px;
+    }
+
+    .content-booking a {
+        padding: 6px 10px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile nhỏ (max-width: 576px) */
+@media (max-width: 576px) {
+    #my-booking {
+        padding: 5px;
+    }
+
+    .wrapper-booking {
+        padding: 8px;
+    }
+
+    .wrapper-booking .name-booking {
+        font-size: 14px;
+    }
+
+    .wrapper-booking .btn-booking a {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    .wrapper-booking input[type="date"] {
+        width: 68%;
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+
+    .content-booking {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .img-userbooking img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .infor-booking {
+        font-size: 11px;
+    }
+
+    .infor-booking p:first-child {
+        font-size: 13px;
+    }
+
+    .status {
+        font-size: 9px;
+        padding: 3px 6px;
+    }
+
+    .content-booking a {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+}

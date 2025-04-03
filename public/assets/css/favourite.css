@@ -1,0 +1,136 @@
+#favourite {
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 1000px;
+    margin: 30px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+#favourite h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.list-favourite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-top: 15px;
+    background: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-favourite:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.img-fvr {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.img-fvr img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    transition: transform 0.2s ease;
+}
+
+.list-favourite:hover .img-fvr img {
+    transform: scale(1.05);
+}
+
+.describe {
+    flex: 1;
+}
+
+.describe .name-fvr {
+    font-weight: 600;
+    font-size: 17px;
+    color: #34495e;
+    margin-bottom: 5px;
+    line-height: 1.3;
+    transition: color 0.2s;
+}
+
+.list-favourite:hover .describe .name-fvr {
+    color: #007bff;
+}
+
+.describe .text-fvr {
+    font-size: 14px;
+    color: #7f8c8d;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.remove-btn {
+    background: #adaaaa;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-left: 15px; /* Tạo khoảng cách với nội dung bên trái */
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #favourite {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .list-favourite {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .img-fvr {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .img-fvr img {
+        margin: 0 auto 10px;
+    }
+
+    .remove-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

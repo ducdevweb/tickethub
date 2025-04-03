@@ -1,0 +1,195 @@
+.content {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.content h2 {
+    margin: 0 0 20px;
+    font-size: 26px;
+    color: #2c3e50;
+    font-weight: 600;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 15px;
+    color: #34495e;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3f51b5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3);
+    outline: none;
+}
+
+.form-group input[type="file"] {
+    padding: 5px;
+    background-color: transparent;
+}
+
+.form-group input[readonly] {
+    background-color: #e9ecef;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.current-image {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.current-image img {
+    width: 200px;
+    height: 120px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.current-image p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;
+}
+
+.btn {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #303f9f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .current-image img {
+        width: 150px;
+        height: 90px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 15px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px 10px;
+    }
+
+    .current-image img {
+        width: 120px;
+        height: 70px;
+    }
+}

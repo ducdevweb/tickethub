@@ -1,0 +1,145 @@
+#my-order {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container-order {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#container-order h3 {
+    font-size: 24px;
+    color: #40A126;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.order-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.order-filter input,
+.order-filter select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.order-filter input:focus,
+.order-filter select:focus {
+    outline: none;
+    border-color: #40A126;
+    box-shadow: 0 0 5px rgba(64, 161, 38, 0.5);
+}
+
+.order-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-list th,
+.order-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+.order-list th {
+    background: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+.order-list td {
+    color: #666;
+}
+
+.order-list tr:hover {
+    background: #f5f5f5;
+}
+
+.order-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #15ff00;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.order-status.pending {
+    background: #ff9800;
+}
+
+.order-status.completed {
+    background: #40A126;
+}
+
+.order-status.cancelled {
+    background: #dc3545;
+}
+
+.order-total {
+    font-weight: bold;
+    color: #40A126;
+}
+
+.order-actions a {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.view-btn {
+    background: #40A126;
+    color: #fff;
+}
+
+.view-btn:hover {
+    background: #2a7a1b;
+    transform: scale(1.05);
+}
+
+.cancel-btn {
+    background: #dc3545;
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background: #b02a37;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .order-list th,
+    .order-list td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .order-actions {
+        display: flex;
+        gap: 5px;
+    }
+
+    .order-actions button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

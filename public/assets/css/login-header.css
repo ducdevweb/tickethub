@@ -1,0 +1,794 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+#header-login-login {
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+#header-login-login .nagivation-bar {
+    background-color: #f5f5f5;
+    display: inline-block;
+    width: 20%;
+    padding: 22px 25px 0 20px;
+}
+
+.main-heading {
+    padding: 0 30px 0 20px;
+}
+
+.style-heading {
+    margin: 15px 5px 15px 0;
+    font-size: 15px;
+}
+
+.style-heading ul {
+    width: 100%;
+    text-align: right;
+}
+
+.main-heading ul li {
+    width: 100%;
+    padding: 15px 0;
+    list-style: none;
+    margin: 5px 0;
+}
+
+.main-heading ul li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 17px;
+    margin-left: 18px;
+}
+
+.main-heading ul .active-li {
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.main-heading ul li:hover {
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+#header-login-login .content-bar {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header-login-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header-login .header-login-content {
+    max-width: 1210px;
+    margin: 20px 50px 0 0;
+    padding: 0 15px;
+}
+
+#header-login .header-login-left {
+    float: right;
+}
+
+#header-login .menu-toggle {
+    display: none;
+}
+
+#header-login .header-login-right {
+    width: 710px;
+    float: left;
+}
+
+#header-login .logo {
+    width: 123px;
+    max-height: 43px;
+    margin-right: 35px;
+}
+
+.header-login-right .header-login-nav {
+    position: absolute;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-login-right .header-login-nav a {
+    font-size: 17px;
+    height: 38px;
+    position: relative;
+    color: #777;
+    width: 133px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    margin-left: 15px;
+}
+
+.header-login-nav .text-nav {
+    text-align: center;
+    line-height: 38px;
+}
+
+.header-login-right .header-login-nav a:hover {
+    transition: 0.4s;
+    border-radius: 50px;
+    background-color: rgba(64, 161, 38, 0.2);
+    color: #40a126;
+}
+
+.header-login-left .header-login-widget {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-login-left::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header-login-widget .cart-icon {
+    font-size: 20px;
+    color: #777;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.header-login-widget .cart-icon:hover {
+    color: #40a126;
+    background: #40a1261f;
+}
+
+.header-login-widget .cart-icon i {
+    position: relative;
+    top: 8px;
+    opacity: 0.5;
+    left: 12px;
+    font-size: 15px;
+}
+
+.cart-icon .cart-number {
+    font-weight: 600;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 20px;
+    height: 20px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    border-radius: 50px;
+    background: #40a126;
+    position: relative;
+    transition: 0.2s;
+    top: -40px;
+    left: 28px;
+    margin: 0 0 0 2px;
+}
+
+.cart-icon .mini-cart {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 999;
+}
+
+.cart-icon:hover .mini-cart {
+    display: block;
+}
+
+.product-mini {
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+}
+
+.product-mini .wrap-mini {
+    width: 100%;
+}
+
+.product-mini img {
+    width: 19%;
+    height: 19%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.wrap-mini .name-mini {
+    width: 100%;
+    font-size: 15px;
+    color: #333333;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.product-mini .quantity-mini {
+    font-size: 15px;
+    color: #888888;
+    font-weight: 500;
+    padding-left: 10px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.mini-cart .total-mini {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 22px;
+    margin: 0;
+    padding: 10px;
+}
+
+.mini-cart .mini-action {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-action a {
+    text-decoration: none;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.mini-action .mini-see {
+    color: #777;
+    background-color: #f0f0f0;
+    font-size: 15px;
+    height: 38px;
+    font-weight: 500;
+    height: 100%;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mini-action .mini-checkout {
+    color: #fff;
+    text-align: center;
+    background-color: #40a126;
+    font-size: 15px;
+    font-weight: 500;
+    height: 100%;
+    text-decoration: none;
+}
+
+.account-menu {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+    user-select: none;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #2b8a3e;
+}
+
+.account-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.account-name {
+    font-weight: 600;
+}
+
+.account-icon {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.menu-account {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 200px;
+    display: none;
+    z-index: 1000;
+}
+
+.menu-account ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.menu-account ul li {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menu-account ul li i {
+    margin-right: 10px;
+}
+
+.menu-account ul li:hover {
+    background: #f1f1f1;
+    color: #40a126;
+}
+
+.header-login-widget .login {
+    font-size: 17px;
+    color: #707070;
+    text-decoration: none;
+    margin-left: 25px;
+    background-color: #f4f4f4;
+    padding: 4px 15px;
+    border-radius: 50px;
+}
+
+.header-login-widget .login a {
+    font-size: 17px;
+    color: #777;
+    text-decoration: none;
+    border-radius: 100%;
+    border-radius: 50px;
+}
+
+.header-login-widget .login:hover {
+    transition: 0.3s;
+    border-radius: 50px;
+    background: #40a126;
+}
+
+.header-login-widget .login:hover i,
+.header-login-widget .login:hover a {
+    color: #fff;
+}
+
+.header-login-widget .login i {
+    text-decoration: none;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    color: #777;
+}
+
+.content-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-bar {
+    width: 100%;
+}
+
+.content-wrapper .heading-login {
+    display: flex;
+    margin: 34px 48px 0 48px;
+    height: 63px;
+}
+
+.heading-login h2 {
+    flex: 1;
+    color: #222222;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.heading-login div {
+    flex: 1;
+    text-align: right;
+}
+
+.heading-login div a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #888888;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (min-width: 1024px) {
+    #header-login-login {
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+    }
+
+    .nagivation-bar {
+        width: 20%;
+        display: block !important;
+    }
+
+    .content-wrapper {
+        width: 80%;
+    }
+
+    .header-login-right .header-login-nav {
+        display: flex;
+    }
+
+    .header-login-left .header-login-widget {
+        display: flex;
+    }
+
+    .content-wrapper .heading-login {
+        margin: 34px 48px 0 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #header-login-login {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nagivation-bar {
+        width: 100%;
+        padding: 15px 20px;
+        position: relative;
+        display: none;
+    }
+
+    .nagivation-bar.active {
+        display: block;
+    }
+
+    .main-heading {
+        padding: 0 20px;
+    }
+
+    .style-heading {
+        font-size: 14px;
+    }
+
+    .main-heading ul li a {
+        font-size: 16px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    #header-login .header-login-content {
+        margin: 20px 30px 0 0;
+        padding: 0 10px;
+    }
+
+    .header-login-right .header-login-nav {
+        position: relative;
+        height: auto;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .header-login-right .header-login-nav a {
+        font-size: 16px;
+        width: auto;
+        margin: 5px 10px;
+    }
+
+    .content-wrapper .heading-login {
+        margin: 20px 30px 0 30px;
+        height: auto;
+    }
+
+    .heading-login h2 {
+        font-size: 28px;
+    }
+
+    .heading-login div a {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    #header-login-login {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nagivation-bar {
+        width: 100%;
+        padding: 10px 15px;
+        display: none;
+        background-color: #f5f5f5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 100vh;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nagivation-bar.active {
+        display: block;
+        transform: translateX(0);
+    }
+
+    .logo-navb img {
+        width: 80px;
+    }
+
+    .main-heading {
+        padding: 0 15px;
+    }
+
+    .style-heading {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    .main-heading ul li {
+        padding: 10px 0;
+    }
+
+    .main-heading ul li a {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    #header-login .header-login-content {
+        margin: 60px 15px 0 15px;
+        padding: 0 5px;
+    }
+
+    .header-login-right {
+        width: 100%;
+        float: none;
+    }
+
+    .header-login-right .header-login-nav {
+        display: none;
+    }
+
+    .header-login-left {
+        float: none;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .header-login-left .header-login-widget {
+        float: none;
+    }
+
+    .header-login-widget .cart-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .cart-icon i {
+        top: 6px;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .cart-icon .cart-number {
+        top: -35px;
+        left: 25px;
+        min-width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .cart-icon .mini-cart {
+        width: 260px;
+    }
+
+    .account-menu {
+        margin-left: 15px;
+    }
+
+    .account-avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .account-name {
+        font-size: 14px;
+    }
+
+    .menu-account {
+        top: 40px;
+        width: 180px;
+    }
+
+    .menu-account ul li {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .content-wrapper .heading-login {
+        margin: 15px 15px 0 15px;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .heading-login h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .heading-login div {
+        text-align: center;
+    }
+
+    .heading-login div a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    #header-login-login .nagivation-bar{
+        width: 60%;
+    }
+}
+
+/* Mobile nhỏ (max-width: 576px) */
+@media (max-width: 576px) {
+        #header-login-login .nagivation-bar{
+            width: 60%;
+        }
+    .logo-navb img {
+        width: 60px;
+    }
+
+    .style-heading {
+        font-size: 12px;
+    }
+
+    .main-heading ul li a {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    #header-login .header-login-content {
+        margin: 50px 10px 0 10px;
+    }
+
+    .header-login-left .header-login-widget {
+        justify-content: flex-end;
+    }
+
+    .account-menu {
+        margin-left: 10px;
+    }
+
+    .account-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .account-name {
+        font-size: 13px;
+    }
+
+    .cart-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cart-icon i {
+        top: 5px;
+        left: 8px;
+        font-size: 12px;
+    }
+
+    .cart-icon .cart-number {
+        top: -30px;
+        left: 20px;
+        min-width: 16px;
+        height: 16px;
+        font-size: 9px;
+    }
+
+    .cart-icon .mini-cart {
+        width: 220px;
+    }
+
+    .content-wrapper .heading-login {
+        margin: 10px 10px 0 10px;
+    }
+
+    .heading-login h2 {
+        font-size: 20px;
+    }
+
+    .heading-login div a {
+        font-size: 13px;
+    }
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #40a126;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Hiển thị menu toggle trên mobile */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+    }
+}

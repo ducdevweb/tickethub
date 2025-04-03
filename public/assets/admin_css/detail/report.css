@@ -1,0 +1,41 @@
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.event-info, .transaction-info {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.event-info p, .transaction-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-wrapper th, .table-wrapper td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.table-wrapper th {
+    background-color: #f4f4f4;
+}
+.action-buttons {
+    margin-top: 20px;
+}
+.action-buttons .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-success { background-color: #28a745; }
+.btn-warning { background-color: #ffc107; }
+.btn-secondary { background-color: #6c757d; }

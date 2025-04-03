@@ -1,0 +1,514 @@
+/* Responsive Design */
+
+/* Tablet and Mobile (max-width: 1200px) */
+@media (max-width: 1200px) {
+    #header .header-content {
+        margin: 0 50px;
+    }
+
+    #header .header-left,
+    #header .header-right {
+        width: auto;
+    }
+
+    #header .header-right {
+        display: none; /* Ẩn menu chính trên tablet/mobile, dùng menu-toggle */
+    }
+
+    #header .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #777;
+    }
+
+    #header .header-left {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #banner .banner-main img {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+    }
+
+    #banner .banner-content {
+        top: 20%;
+        left: 5%;
+        width: 80%;
+        max-width: 400px;
+        margin-left: 0;
+    }
+
+    .banner-content .text-banner {
+        font-size: 30px;
+    }
+
+    .banner-content .text-banner2 {
+        font-size: 18px;
+    }
+
+    .banner-categoty .cate-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .banner-categoty .cate-filter {
+        width: 120px;
+        font-size: 14px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    #filter .filter-product {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .filter-product .form-filter {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .form-filter .input-filter {
+        width: 200px;
+        padding: 10px;
+        margin-left: 10px;
+        height: 45px;
+    }
+
+    .form-filter .button-filter {
+        width: 150px;
+        height: 45px;
+        padding: 0 30px;
+        margin-right: 10px;
+    }
+
+    #trend .trend-content {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .trend-content .trend-list {
+        width: 180px;
+        height: 150px;
+        padding: 20px 15px;
+    }
+
+    #propose {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 40px 10px;
+    }
+
+    .propose-content {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .propose-img {
+        width: calc(50% - 10px);
+        height: 200px;
+    }
+
+    .background-content {
+        width: 80%;
+        margin-top: 100px;
+        margin-left: 5%;
+        max-width: 500px;
+    }
+
+    .background-content1 {
+        font-size: 28px;
+    }
+
+    .background-content2 {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #location .location-content {
+        width: 100%;
+        max-width: 900px;
+        left: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .location-text,
+    .location-img {
+        width: 100%;
+    }
+
+    .location-text h2 {
+        font-size: 28px;
+    }
+
+    .location-text h4 {
+        font-size: 18px;
+    }
+
+    .location-img img {
+        height: 300px;
+    }
+
+    #introduce {
+        padding: 40px 10px;
+    }
+
+    .introduce-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .introduce-text,
+    .introduce-img {
+        width: 100%;
+    }
+
+    .introduce-img img {
+        max-width: 100%;
+    }
+
+    #footer {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 50px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #footer div {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    #header .header-content {
+        margin: 0 20px;
+    }
+
+    #header .header-left {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    #banner .banner-main img {
+        min-height: 250px;
+    }
+
+    #banner .banner-content {
+        top: 15%;
+        left: 5%;
+        width: 80%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .banner-content .text-banner {
+        font-size: 22px;
+    }
+
+    .banner-content .text-banner2 {
+        font-size: 14px;
+    }
+
+    .banner-categoty .cate-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-categoty .cate-filter {
+        width: 180px;
+        margin: 5px 0;
+    }
+
+    #filter .filter-product {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .form-filter {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .form-filter .input-filter,
+    .form-filter .button-filter {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    #trend {
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    #trend .trend-content {
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .trend-content .trend-list {
+        width: 150px;
+        height: 130px;
+        padding: 15px;
+    }
+
+    #propose .propose-content {
+        flex-direction: column;
+    }
+
+    .propose-img {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .background-content {
+        margin-top: 80px;
+        max-width: 400px;
+    }
+
+    .background-content1 {
+        font-size: 24px;
+    }
+
+    .background-content2 {
+        font-size: 14px;
+    }
+
+    #location .location-content {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .location-text h2 {
+        font-size: 24px;
+    }
+
+    .location-text h4 {
+        font-size: 16px;
+    }
+
+    .location-img img {
+        height: 200px;
+    }
+
+    #introduce {
+        padding: 30px 10px;
+    }
+
+    .introduce-text h3 {
+        font-size: 20px;
+    }
+
+    .feature-text h4 {
+        font-size: 16px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+    }
+
+    #footer {
+        margin: 0 20px;
+        padding: 30px 10px;
+        gap: 15px;
+    }
+
+    #footer div h3 {
+        font-size: 16px;
+    }
+
+    #footer div p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Small (max-width: 480px) */
+@media (max-width: 480px) {
+    #header .header-content {
+        margin: 0 10px;
+    }
+
+    #banner .banner-main img {
+        min-height: 200px;
+    }
+
+    #banner .banner-content {
+        top: 10%;
+        left: 5%;
+        width: 80%;
+        max-width: 250px;
+        padding: 8px;
+    }
+
+    .banner-content .text-banner {
+        font-size: 18px;
+    }
+
+    .banner-content .text-banner2 {
+        font-size: 12px;
+    }
+
+    .banner-content .banner-search {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .banner-categoty .cate-filter {
+        width: 150px;
+        font-size: 12px;
+        height: 22px;
+    }
+
+    #filter .filter-product {
+        padding: 5px 0;
+    }
+
+    .form-filter {
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .form-filter .input-filter {
+        width: 100%;
+        padding: 8px;
+        margin: 0;
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .form-filter .button-filter {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    #trend .trend-content {
+        max-width: 300px;
+        gap: 10px;
+    }
+
+    .trend-content .trend-list {
+        width: 120px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .trend-list i {
+        font-size: 30px;
+    }
+
+    .trend-list .trend-text {
+        font-size: 14px;
+    }
+
+    #propose {
+        padding: 20px 10px;
+    }
+
+    .propose-head {
+        font-size: 18px;
+    }
+
+    .head-sec {
+        font-size: 12px;
+    }
+
+    .propose-img {
+        height: 120px;
+    }
+
+    .propose-img .title-propose {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .background-content {
+        margin-top: 60px;
+        max-width: 300px;
+    }
+
+    .background-content1 {
+        font-size: 18px;
+    }
+
+    .background-content2 {
+        font-size: 10px;
+    }
+
+    .background-content3 {
+        font-size: 12px;
+        padding: 10px 16px;
+    }
+
+    .location-text h2 {
+        font-size: 20px;
+    }
+
+    .location-text h4 {
+        font-size: 14px;
+    }
+
+    .location-text button {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .location-img img {
+        height: 150px;
+    }
+
+    #introduce {
+        padding: 20px 10px;
+    }
+
+    .introduce-text h3 {
+        font-size: 18px;
+    }
+
+    .feature-text h4 {
+        font-size: 14px;
+    }
+
+    .feature-text p {
+        font-size: 10px;
+    }
+
+    .icon-introduce {
+        width: 70px;
+        height: 70px;
+    }
+
+    #footer {
+        margin: 0 10px;
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    #footer div h3 {
+        font-size: 14px;
+    }
+
+    #footer div p {
+        font-size: 12px;
+    }
+}

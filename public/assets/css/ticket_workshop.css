@@ -1,0 +1,401 @@
+
+#main-workshop {
+    margin: 0 167px;
+    padding: 20px 0;
+}
+
+#main-workshop .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 15px 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#main-workshop .heading h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #222222;
+}
+
+#main-workshop .heading h4 {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 5px;
+}
+
+.workshop-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 35px;
+    padding: 20px 0;
+}
+.workshop-content .workshop-ticket {
+    width: 76%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.workshop-content .workshop-product {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between; 
+}
+
+.workshop-product .workshop-product-img {
+    width: calc(33.33% - 20px); 
+    height: 424px; 
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+.workshop-product .workshop-product-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.workshop-product .workshop-product-img .sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #089c2a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.workshop-product .workshop-product-img img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0;
+    transition: opacity 0.3s ease;
+}
+.workshop-product .workshop-product-img:hover img {
+    opacity: 0.8;
+}
+
+.workshop-product .workshop-product-img .name-ticket {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin: 15px 0 5px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.workshop-product .workshop-product-img .price-ticket {
+    font-size: 18px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.price-ticket del {
+    color: #999;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.price-ticket .sale-price {
+    color: #e60000; 
+    font-size: 20px;
+    font-weight: bold;
+    background: #ffebeb;
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+.price-ticket .sale-price:hover {
+    transform: scale(1.1);
+}
+.workshop-product-img .btn-ticket {
+    width: 80%; 
+    height: 40px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: relative;
+    bottom: 20px;
+}
+
+.workshop-product-img:hover .btn-ticket {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+}
+.workshop-product-img .btn-ticket:hover {
+    background-color: #444;
+}
+
+.workshop-product-img .btn-ticket h4 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.workshop-product-img .btn-ticket i {
+    font-size: 18px;
+}
+
+.workshop-content .sidebar {
+    width: 25%;
+    margin-left: 0;
+    padding: 0 10px;
+}
+
+.sidebar .sidebar-form {
+    width: 100%;
+    max-width: 275px;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.sidebar-form .sidebar-search {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #808080;
+}
+
+.sidebar-form .sidebar-search::placeholder {
+    font-size: 14px;
+    color: #808080;
+}
+
+.sidebar-form button {
+    width: 42px;
+    height: 38px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 300;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-form button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.sidebar-form2 .dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 275px;
+    user-select: none;
+}
+
+.sidebar-form2 .dropdown-toggle {
+    width: 100%;
+    padding: 12px 16px;
+    background: #fff;
+    border: 2px solid #888;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.sidebar-form2 .dropdown-toggle:hover {
+    background-color: #4cc90e;
+    border-color: #4cc90e;
+    color: #fff;
+}
+
+.sidebar-form2 .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #888;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-form2 .dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sidebar-form2 .dropdown-menu li {
+    list-style: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-form2 .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.sidebar-form2 .dropdown-menu li:hover {
+    background: #4cc90e;
+}
+
+.sidebar-form2 .dropdown-menu li:hover a {
+    color: #fff;
+}
+
+.sidebar .care-about-list li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar .care-about-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.care-about-list li img {
+    width: 100px;
+    height: 91px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.care-about-list li a {
+    text-decoration: none;
+    flex: 1;
+    display: block;
+}
+
+.care-about-list li .infor-care {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.care-about-list li .name-care {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.care-about-list li .price-care {
+    font-size: 17px;
+    color: #777;
+    background-color: #e1e1e1;
+    border-radius: 16px;
+    padding: 5px 10px;
+    width: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+    #main-workshop {
+        margin: 0 50px;
+    }
+
+    .workshop-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .workshop-content .workshop-ticket,
+    .workshop-content .sidebar {
+        width: 100%;
+    }
+
+    .workshop-content .sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .workshop-product .workshop-product-img {
+        width: calc(50% - 15px);
+        height: 400px;
+    }
+
+    .workshop-product .workshop-product-img img {
+        height: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-workshop {
+        margin: 0 20px;
+    }
+
+    #main-workshop .heading {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    #main-workshop .heading h4 {
+        margin-top: 10px;
+    }
+    .workshop-product .workshop-product-img {
+        width: 100%;
+        height: 350px
+    }
+
+    .workshop-product .workshop-product-img img {
+        height: 200px; 
+    }
+}

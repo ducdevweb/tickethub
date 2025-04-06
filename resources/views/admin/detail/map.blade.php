@@ -12,7 +12,7 @@
 <script>
     window.onload = function() {
         var location = "{{ $event->location }}";
-        var weatherApiKey = "6b837da8a583463c970172126252503";  // 🔑 Đặt API Key của bạn tại đây
+        var weatherApiKey = "6b837da8a583463c970172126252503";  
         function getCoordinates(location) {
             const apiURL = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(location)}`;
             
@@ -32,7 +32,6 @@
                 .catch(err => console.error("Lỗi khi gọi API:", err));
         }
 
-        // 🏙️ Hiển thị bản đồ
         function initMap(lat, lng) {
             if (typeof L === 'undefined') {
                 console.error("Leaflet.js chưa được tải!");
@@ -48,8 +47,6 @@
                 .bindPopup("📍 {{ $event->name_event }} - " + location)
                 .openPopup();
         }
-
-        // 🌤️ Lấy dữ liệu thời tiết từ WeatherAPI
         function getWeather(lat, lon) {
             const weatherURL = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${lat},${lon}&lang=vi`;
 
@@ -77,8 +74,6 @@
                 })
                 .catch(err => console.error("Lỗi khi gọi API thời tiết:", err));
         }
-
-        // ⚙️ Bắt đầu gọi hàm
         getCoordinates(location);
     };
 </script>
